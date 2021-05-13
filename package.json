@@ -10,16 +10,23 @@
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@mdx-js/react": "^1.6.22",
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@snowpack/web-test-runner-plugin": "^0.2.2",
     "@storybook/addon-actions": "^6.3.0-alpha.25",
     "@storybook/addon-docs": "^6.3.0-alpha.25",
     "@storybook/addon-essentials": "^6.3.0-alpha.25",
     "@storybook/addon-links": "^6.3.0-alpha.25",
     "@storybook/react": "^6.3.0-alpha.25",
+    "@testing-library/react": "^11.2.6",
+    "@web/test-runner": "^0.13.4",
+    "@web/test-runner-playwright": "^0.8.5",
     "babel-loader": "^8.2.2",
+    "snowpack": "^3.3.7",
     "typescript": "latest"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "web-test-runner --playwright --browsers chromium"
   }
 }
